@@ -1,0 +1,53 @@
+.navegation__list__item__link--foot:hover{
+    text-decoration: underline;
+}
+
+.navegation__list__item--head:last-child:hover{
+    background: $green;
+    transition: .5s;
+}
+
+.navegation__list__item__link--head:hover{
+    text-decoration: underline;
+
+}
+
+.navegation__list__item--head:last-child:hover .navegation__list__item__link--head{
+    color: $gray;
+    text-decoration: none;
+}
+
+.articles__container__cart:hover{
+    box-shadow: 0 0 8px $green;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: $gray;
+    background: $green;
+    transition: .5s;
+}
+
+.fa-facebook:hover{
+    color: #3b5999;
+    transition: .5s;
+
+}
+
+.fa-twitter-square:hover{
+    color: #55acee;
+    transition: .5s;
+
+}
+
+.fa-google-plus-square:hover{
+    color: #dd4b39;
+    transition: .5s;
+
+}
+
+.fa-pinterest-square:hover{
+    color: #bd081c;
+    transition: .5s;
+
+}

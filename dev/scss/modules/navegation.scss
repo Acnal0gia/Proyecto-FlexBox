@@ -1,0 +1,44 @@
+.navegation{
+    &__list{
+        display: flex;
+
+        &__item{
+            
+            &__link{
+                text-decoration: none;
+
+            }
+        }
+    }
+}
+
+
+.navegation{
+    
+    &__list__item--head:last-child{
+        padding: 0 5px;
+        border: 1px solid $green;
+    }
+    
+    &__list__item--head{
+        margin-left: $channel;
+        
+    }
+    
+    &__list__item__link--head{
+        @extend %font-regular;    
+        color: $green;
+    }
+}
+
+.navegation{
+    &__list__item--foot{
+        margin-right: $channel * 2;
+        
+    }
+
+    &__list__item__link--foot{
+        color: $green;
+        @extend %font-regular;    
+    }
+}

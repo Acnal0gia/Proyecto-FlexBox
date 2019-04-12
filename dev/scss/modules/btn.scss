@@ -1,0 +1,16 @@
+.btn{
+    color: $green;
+    line-height: 2.5em;
+    background: none;
+    border: none;
+    padding: 0 1.5em;
+    border: 1px solid $green;
+}
+
+.btn--foot{
+    margin-top: $channel;
+
+    margin-bottom: $channel * 5; // Este marger rompe la consistencia.
+
+}
+

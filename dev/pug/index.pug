@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Flex Box proyect
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
+        
+        -let items = [`About`,`Articles`,`Subscribe`]
+        -let images = [`cartOne.jpg`,`cartTwo.jpg`,`cartThree.jpg`]
+    body
+        .container-box
+            
+            header.head
+                img(src="images/banner.jpg", alt="").head__banner
+                .head__logo LO
+                
+                .head__titles
+                    h1.head__titles__title LOMBOK
+                    h2.head__titles__subtitle HOLISTIC HEALTH
+                
+                .head__navegation
+                    span.icon  
+                        i(class="fas fa-bars")
+                    nav(class="navegation navegation--head") 
+                        ul(class="navegation__list navegation__list--head")
+                            each val in items
+                                li(class="navegation__list__item navegation__list__item--head") 
+                                    a(class="navegation__list__item__link navegation__list__item__link--head" href="#")=val
+
+            main.main
+                .articles
+                    h2.articles__title Latest article
+                    .articles__container
+                        each val in images  
+                            .articles__container__cart
+                                img(src="images/"+val).articles__container__cart__image
+                                p.articles__container__cart__info Lorem ipsum dolor sit amet consectetur magni molestiae. 
+
+                .about
+                    img(src="images/cartfinal.jpg").about__image
+                    .about__container   
+                        h2.about__container__title About
+                        p.about__container__info Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, eos pariatur! Aliquid et, laudantium repellendus dolores tenetur veritatis ab eum sapiente, officia praesentium repellat dolorum aut voluptas optio? Voluptates, officiis?
+
+            footer.foot
+                .foot__info
+                    h3.foot__info__title Subscribe
+                    span.foot__info__span Sign-up to out newslether
+                    form.foot__info__form
+                        input(type="email", name="", placeholder="E-mail" ).foot__info__form__input              
+                        button(type="submit" class="btn btn--foot") submit    
+
+                .foot__final
+                    //crear una nueva cuenta y buscar los iconos. ya que destui la anterior 
+                    .foot__final__icons
+                        i(class="fab fa-facebook")
+                        i(class="fab fa-twitter-square")
+                        i(class="fab fa-google-plus-square")
+                        i(class="fab fa-pinterest-square")
+
+                    .foot__final__navegation
+                        nav(class="navegation navegation--foot") 
+                            ul(class="navegation__list navegation__list--foot")
+                                each val in items
+                                    li(class="navegation__list__item navegation__list__item--foot") 
+                                        a(class="navegation__list__item__link navegation__list__item__link--foot" href="#")=val
+
+
+                        
+
+

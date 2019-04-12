@@ -1,0 +1,51 @@
+/*
+
+    En este proyecto pense en realizar la pagina solo con flexbox.
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600');
+@import url("https://file.myfontastic.com/enaLYurCgMS5htaR7MNQRR/icons.css");
+
+//Paleta de Colores.
+:root{
+    --green: #6b8c42;
+    --gray: #e9e4e6;
+    --light-gray: #f6f5f5;
+    --black: #1d1919;
+    
+}
+
+$brown: var(--brown);
+$green: var(--green);
+$light-green: var(--light-green);
+$black: var(--black);
+$gray: var(--gray);
+$light-gray: var(--light-gray);
+
+//Tipografia
+$titi: 'Titillium Web', sans-serif;
+$regular: 400;
+$bold: 600;
+
+$channel: 1em;
+
+%font-regular{
+    font-family: $titi;
+    font-weight: $regular;
+}
+
+%font-bold{
+    font-family: $titi;
+    font-weight: $bold;
+    text-transform: uppercase;
+}
+
+%pseudo{
+    content: "";
+    display: inline-block;
+    
+    border-bottom: 5px solid $green;
+
+    position: absolute;
+}
