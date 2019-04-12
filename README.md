@@ -4,8 +4,8 @@ En el archivo gulpFile de la carpeta dev, se encuentran las paquetes necesarios(
 
 paquetes necesarios(npm)
 
-npm i gulp
-npm i gulp-sass
-npm i gulp-pug
-npm i gulp-autoprefixer
+npm i gulp, 
+npm i gulp-sass, 
+npm i gulp-pug, 
+npm i gulp-autoprefixer 
 
